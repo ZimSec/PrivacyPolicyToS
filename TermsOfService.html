@@ -1,646 +1,137 @@
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>SOUNDMIND TERMS OF SERVICE</title><style>
-/* cspell:disable-file */
-/* webkit printing magic: print all background colors */
-html {
-	-webkit-print-color-adjust: exact;
-}
-* {
-	box-sizing: border-box;
-	-webkit-print-color-adjust: exact;
-}
-
-html,
-body {
-	margin: 0;
-	padding: 0;
-}
-@media only screen {
-	body {
-		margin: 2em auto;
-		max-width: 900px;
-		color: rgb(55, 53, 47);
-	}
-}
-
-body {
-	line-height: 1.5;
-	white-space: pre-wrap;
-}
-
-a,
-a.visited {
-	color: inherit;
-	text-decoration: underline;
-}
-
-.pdf-relative-link-path {
-	font-size: 80%;
-	color: #444;
-}
-
-h1,
-h2,
-h3 {
-	letter-spacing: -0.01em;
-	line-height: 1.2;
-	font-weight: 600;
-	margin-bottom: 0;
-}
-
-.page-title {
-	font-size: 2.5rem;
-	font-weight: 700;
-	margin-top: 0;
-	margin-bottom: 0.75em;
-}
-
-h1 {
-	font-size: 1.875rem;
-	margin-top: 1.875rem;
-}
-
-h2 {
-	font-size: 1.5rem;
-	margin-top: 1.5rem;
-}
-
-h3 {
-	font-size: 1.25rem;
-	margin-top: 1.25rem;
-}
-
-.source {
-	border: 1px solid #ddd;
-	border-radius: 3px;
-	padding: 1.5em;
-	word-break: break-all;
-}
-
-.callout {
-	border-radius: 3px;
-	padding: 1rem;
-}
-
-figure {
-	margin: 1.25em 0;
-	page-break-inside: avoid;
-}
-
-figcaption {
-	opacity: 0.5;
-	font-size: 85%;
-	margin-top: 0.5em;
-}
-
-mark {
-	background-color: transparent;
-}
-
-.indented {
-	padding-left: 1.5em;
-}
-
-hr {
-	background: transparent;
-	display: block;
-	width: 100%;
-	height: 1px;
-	visibility: visible;
-	border: none;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
-}
-
-img {
-	max-width: 100%;
-}
-
-@media only print {
-	img {
-		max-height: 100vh;
-		object-fit: contain;
-	}
-}
-
-@page {
-	margin: 1in;
-}
-
-.collection-content {
-	font-size: 0.875rem;
-}
-
-.column-list {
-	display: flex;
-	justify-content: space-between;
-}
-
-.column {
-	padding: 0 1em;
-}
-
-.column:first-child {
-	padding-left: 0;
-}
-
-.column:last-child {
-	padding-right: 0;
-}
-
-.table_of_contents-item {
-	display: block;
-	font-size: 0.875rem;
-	line-height: 1.3;
-	padding: 0.125rem;
-}
-
-.table_of_contents-indent-1 {
-	margin-left: 1.5rem;
-}
-
-.table_of_contents-indent-2 {
-	margin-left: 3rem;
-}
-
-.table_of_contents-indent-3 {
-	margin-left: 4.5rem;
-}
-
-.table_of_contents-link {
-	text-decoration: none;
-	opacity: 0.7;
-	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
-}
-
-table,
-th,
-td {
-	border: 1px solid rgba(55, 53, 47, 0.09);
-	border-collapse: collapse;
-}
-
-table {
-	border-left: none;
-	border-right: none;
-}
-
-th,
-td {
-	font-weight: normal;
-	padding: 0.25em 0.5em;
-	line-height: 1.5;
-	min-height: 1.5em;
-	text-align: left;
-}
-
-th {
-	color: rgba(55, 53, 47, 0.6);
-}
-
-ol,
-ul {
-	margin: 0;
-	margin-block-start: 0.6em;
-	margin-block-end: 0.6em;
-}
-
-li > ol:first-child,
-li > ul:first-child {
-	margin-block-start: 0.6em;
-}
-
-ul > li {
-	list-style: disc;
-}
-
-ul.to-do-list {
-	text-indent: -1.7em;
-}
-
-ul.to-do-list > li {
-	list-style: none;
-}
-
-.to-do-children-checked {
-	text-decoration: line-through;
-	opacity: 0.375;
-}
-
-ul.toggle > li {
-	list-style: none;
-}
-
-ul {
-	padding-inline-start: 1.7em;
-}
-
-ul > li {
-	padding-left: 0.1em;
-}
-
-ol {
-	padding-inline-start: 1.6em;
-}
-
-ol > li {
-	padding-left: 0.2em;
-}
-
-.mono ol {
-	padding-inline-start: 2em;
-}
-
-.mono ol > li {
-	text-indent: -0.4em;
-}
-
-.toggle {
-	padding-inline-start: 0em;
-	list-style-type: none;
-}
-
-/* Indent toggle children */
-.toggle > li > details {
-	padding-left: 1.7em;
-}
-
-.toggle > li > details > summary {
-	margin-left: -1.1em;
-}
-
-.selected-value {
-	display: inline-block;
-	padding: 0 0.5em;
-	background: rgba(206, 205, 202, 0.5);
-	border-radius: 3px;
-	margin-right: 0.5em;
-	margin-top: 0.3em;
-	margin-bottom: 0.3em;
-	white-space: nowrap;
-}
-
-.collection-title {
-	display: inline-block;
-	margin-right: 1em;
-}
-
-time {
-	opacity: 0.5;
-}
-
-.icon {
-	display: inline-block;
-	max-width: 1.2em;
-	max-height: 1.2em;
-	text-decoration: none;
-	vertical-align: text-bottom;
-	margin-right: 0.5em;
-}
-
-img.icon {
-	border-radius: 3px;
-}
-
-.user-icon {
-	width: 1.5em;
-	height: 1.5em;
-	border-radius: 100%;
-	margin-right: 0.5rem;
-}
-
-.user-icon-inner {
-	font-size: 0.8em;
-}
-
-.text-icon {
-	border: 1px solid #000;
-	text-align: center;
-}
-
-.page-cover-image {
-	display: block;
-	object-fit: cover;
-	width: 100%;
-	height: 30vh;
-}
-
-.page-header-icon {
-	font-size: 3rem;
-	margin-bottom: 1rem;
-}
-
-.page-header-icon-with-cover {
-	margin-top: -0.72em;
-	margin-left: 0.07em;
-}
-
-.page-header-icon img {
-	border-radius: 3px;
-}
-
-.link-to-page {
-	margin: 1em 0;
-	padding: 0;
-	border: none;
-	font-weight: 500;
-}
-
-p > .user {
-	opacity: 0.5;
-}
-
-td > .user,
-td > time {
-	white-space: nowrap;
-}
-
-input[type="checkbox"] {
-	transform: scale(1.5);
-	margin-right: 0.6em;
-	vertical-align: middle;
-}
-
-p {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
-}
-
-.image {
-	border: none;
-	margin: 1.5em 0;
-	padding: 0;
-	border-radius: 0;
-	text-align: center;
-}
-
-.code,
-code {
-	background: rgba(135, 131, 120, 0.15);
-	border-radius: 3px;
-	padding: 0.2em 0.4em;
-	border-radius: 3px;
-	font-size: 85%;
-	tab-size: 2;
-}
-
-code {
-	color: #eb5757;
-}
-
-.code {
-	padding: 1.5em 1em;
-}
-
-.code-wrap {
-	white-space: pre-wrap;
-	word-break: break-all;
-}
-
-.code > code {
-	background: none;
-	padding: 0;
-	font-size: 100%;
-	color: inherit;
-}
-
-blockquote {
-	font-size: 1.25em;
-	margin: 1em 0;
-	padding-left: 1em;
-	border-left: 3px solid rgb(55, 53, 47);
-}
-
-.bookmark {
-	text-decoration: none;
-	max-height: 8em;
-	padding: 0;
-	display: flex;
-	width: 100%;
-	align-items: stretch;
-}
-
-.bookmark-title {
-	font-size: 0.85em;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	height: 1.75em;
-	white-space: nowrap;
-}
-
-.bookmark-text {
-	display: flex;
-	flex-direction: column;
-}
-
-.bookmark-info {
-	flex: 4 1 180px;
-	padding: 12px 14px 14px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.bookmark-image {
-	width: 33%;
-	flex: 1 1 180px;
-	display: block;
-	position: relative;
-	object-fit: cover;
-	border-radius: 1px;
-}
-
-.bookmark-description {
-	color: rgba(55, 53, 47, 0.6);
-	font-size: 0.75em;
-	overflow: hidden;
-	max-height: 4.5em;
-	word-break: break-word;
-}
-
-.bookmark-href {
-	font-size: 0.75em;
-	margin-top: 0.25em;
-}
-
-.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
-.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
-.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
-.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
-.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
-.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
-.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
-.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
-.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
-.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
-.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
-.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
-.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
-.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
-.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
-.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
-.highlight-default {
-	color: rgba(55, 53, 47, 1);
-}
-.highlight-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(145, 145, 142, 1);
-}
-.highlight-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(187, 132, 108, 1);
-}
-.highlight-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(215, 129, 58, 1);
-}
-.highlight-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 148, 51, 1);
-}
-.highlight-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(108, 155, 125, 1);
-}
-.highlight-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(91, 151, 189, 1);
-}
-.highlight-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(167, 130, 195, 1);
-}
-.highlight-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(205, 116, 159, 1);
-}
-.highlight-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(225, 111, 100, 1);
-}
-.highlight-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.highlight-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.highlight-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.highlight-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.highlight-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.highlight-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.highlight-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.highlight-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.highlight-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.block-color-default {
-	color: inherit;
-	fill: inherit;
-}
-.block-color-gray {
-	color: rgba(120, 119, 116, 1);
-	fill: rgba(145, 145, 142, 1);
-}
-.block-color-brown {
-	color: rgba(159, 107, 83, 1);
-	fill: rgba(187, 132, 108, 1);
-}
-.block-color-orange {
-	color: rgba(217, 115, 13, 1);
-	fill: rgba(215, 129, 58, 1);
-}
-.block-color-yellow {
-	color: rgba(203, 145, 47, 1);
-	fill: rgba(203, 148, 51, 1);
-}
-.block-color-teal {
-	color: rgba(68, 131, 97, 1);
-	fill: rgba(108, 155, 125, 1);
-}
-.block-color-blue {
-	color: rgba(51, 126, 169, 1);
-	fill: rgba(91, 151, 189, 1);
-}
-.block-color-purple {
-	color: rgba(144, 101, 176, 1);
-	fill: rgba(167, 130, 195, 1);
-}
-.block-color-pink {
-	color: rgba(193, 76, 138, 1);
-	fill: rgba(205, 116, 159, 1);
-}
-.block-color-red {
-	color: rgba(212, 76, 71, 1);
-	fill: rgba(225, 111, 100, 1);
-}
-.block-color-gray_background {
-	background: rgba(241, 241, 239, 1);
-}
-.block-color-brown_background {
-	background: rgba(244, 238, 238, 1);
-}
-.block-color-orange_background {
-	background: rgba(251, 236, 221, 1);
-}
-.block-color-yellow_background {
-	background: rgba(251, 243, 219, 1);
-}
-.block-color-teal_background {
-	background: rgba(237, 243, 236, 1);
-}
-.block-color-blue_background {
-	background: rgba(231, 243, 248, 1);
-}
-.block-color-purple_background {
-	background: rgba(244, 240, 247, 0.8);
-}
-.block-color-pink_background {
-	background: rgba(249, 238, 243, 0.8);
-}
-.block-color-red_background {
-	background: rgba(253, 235, 236, 1);
-}
-.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
-.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
-.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
-.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
-.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
-.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
-.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
-.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
-.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
-
-.checkbox {
-	display: inline-flex;
-	vertical-align: text-bottom;
-	width: 16;
-	height: 16;
-	background-size: 16px;
-	margin-left: 2px;
-	margin-right: 5px;
-}
-
-.checkbox-on {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-
-.checkbox-off {
-	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
-}
-	
-</style></head><body><article id="0fb9c7d4-93a8-4ec9-b949-5b8d9364e6f5" class="page serif"><header><h1 class="page-title"><strong>SOUNDMIND </strong>TERMS OF SERVICE</h1></header><div class="page-body"><p id="b25385c2-4d77-4043-9bb1-efa86b152c4b" class=""><em><strong>Last Updated: [10/15/2021]</strong></em></p><p id="5a8acebb-51bf-4b01-afff-c3fe48baaa02" class="">These Terms of Service (“<em><strong>Terms</strong></em>”) apply to your access to and use of the websites and other online products and services (collectively, the “<em><strong>Services</strong></em>”) provided by SoundMind Corp. (“<em><strong>SoundMind</strong></em>,” “<em><strong>we</strong></em>,” or “<em><strong>us</strong></em>”).</p><p id="51ad90fb-d5dc-4543-a6ee-e6f791aebb04" class=""><strong>PLEASE READ THESE TERMS CAREFULLY, INCLUDING THE MANDATORY ARBITRATION PROVISION IN SECTION 15, WHICH REQUIRES THAT DISPUTES BE RESOLVED BY FINAL AND BINDING ARBITRATION ON AN INDIVIDUAL BASIS, NOT A CLASS-WIDE OR CONSOLIDATED BASIS. IF YOU DO NOT WISH TO BE SUBJECT TO ARBITRATION, YOU MAY OPT OUT OF THE ARBITRATION PROVISION BY FOLLOWING THE INSTRUCTIONS PROVIDED IN SECTION 15.</strong></p><p id="634b0e39-6f83-4c61-8425-905501f0620e" class="">By accessing or using our Services, you agree to be bound by these Terms and all terms incorporated by reference. If you do not agree to these Terms in their entirety, do not use our Services.</p><p id="08b7598a-c905-4102-936f-d058e87f0623" class="">We may make changes to these Terms from time to time. If we make changes, we will provide you with notice of such changes, such as by sending an email, providing a notice through our Services or updating the date at the top of these Terms. Unless we say otherwise in our notice, the amended Terms will be effective immediately, and your continued use of our Services after we provide such notice will confirm your acceptance of the changes. If you do not agree to the amended Terms, you must stop using our Services.</p><p id="6c581bd8-2ddb-42e1-8ff6-ea87a9f1122f" class="">If you have any questions about these Terms or our Services, please contact us at support@soundmind.app.</p><h1 id="4405a1a5-5372-4ca8-8793-6c73f62d0d8a" class="">Privacy</h1><p id="fb69dd9e-9709-496f-9de1-7ca47bc91c1e" class="">For information about how we collect, use, share or otherwise process information about you, please see our Privacy Policy at https://www.soundmind.app/privacy-policy.</p><h1 id="fb944446-3064-4fd5-bee4-18ff0063fe0b" class="">Eligibility</h1><p id="a9165397-015d-4fb7-a04d-e4f3e78e96f1" class="">You must be at least 18 years of age (or the age of legal majority where you live) to use our Services. If you use our Services on behalf of another person or entity, (a) all references to “you” throughout these Terms will include that person or entity, (b) you represent that you are authorized to accept these Terms on that person’s or entity’s behalf, and (c) in the event you or the person or entity violates these Terms, the person or entity agrees to be responsible to us.</p><h1 id="2b206ba0-f9bc-45b1-8cca-04981a635a9b" class="">Medical Disclaimers and Release</h1><p id="35df6216-8ca9-4ddc-9099-f524875d861d" class=""><strong>Please closely review the disclaimers and release in this Section 3 before using our Services. By using our Services, you expressly acknowledge that you have read, understand, and agreed to the disclaimers and release in this Section 3, in addition to the other terms in these Terms.</strong></p><p id="879be857-d837-473e-9c4c-540e52daeae5" class=""><strong>By using our Services, you understand and agree that:</strong></p><ul id="d113cd7c-8b6d-4660-b915-e802f5940630" class="bulleted-list"><li style="list-style-type:disc"><strong>Use of and access to our Services does not create a doctor-patient relationship;</strong></li></ul><ul id="aec0f382-1278-4bc4-a0bf-0cf107fb020d" class="bulleted-list"><li style="list-style-type:disc"><strong>Our Services are non-clinical in nature, provided for informational purposes only, and not intended, designed, or implied to diagnose, prevent, or treat any condition or disease, to ascertain the state of your health, or to be a substitute for professional medical care;</strong></li></ul><ul id="4e3e4938-abb2-4d64-ae78-7cd018fcd358" class="bulleted-list"><li style="list-style-type:disc"><strong>SoundMind is not a licensed medical care provider and does not engage in, and has no expertise in, diagnosing, examining, or treating medical conditions of any kind, or in prescribing medications or treatments or determining the effect of any specific treatment on a medical condition;</strong></li></ul><ul id="08566a31-6025-4f6d-83f3-f5347dbe7c91" class="bulleted-list"><li style="list-style-type:disc"><strong>SoundMind does not provide emergency services and may not contact you or anyone on your behalf with respect to your medical condition or treatment;</strong></li></ul><ul id="7b565eb7-3099-48db-b6fd-968c4e5ff72e" class="bulleted-list"><li style="list-style-type:disc"><strong>You are responsible for your own medical care, treatment and oversight and that you should always seek the advice of your physician or other qualified healthcare provider with any questions or concerns you may have regarding your health; and</strong></li></ul><ul id="6dc01ee3-31b6-46d3-93f0-dc8270e2e2bc" class="bulleted-list"><li style="list-style-type:disc"><strong>You should never disregard professional medical advice or delay in seeking it because of something you have read or received using the Services.</strong></li></ul><p id="51235379-510f-4509-bcb3-5aa586bb3032" class=""><strong>Your use of our Services is at your sole risk. Our Services and any products or services made available therein, and any information related to the foregoing made available on the Services are provided “as is” and “as available” without warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. Without limiting the foregoing, we make no warranties that our Services, including, without limitation, the descriptions of any products or services made available on our Services are accurate, complete, reliable, current, or error-free. You assume the entire risk as to the quality, performance, and outcomes of the Services.</strong></p><p id="7bc96212-0f91-408e-85b0-b7527410f9dd" class=""><strong>Information and statements regarding the products or services made available on our Services are not intended to diagnose, treat, cure, or prevent any disease.</strong></p><p id="c49eddf0-fa84-4a85-bb46-db0c29ec56f3" class=""><strong>TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, YOU RELEASE SOUNDMIND AND THE OTHER SOUNDMIND PARTIES (AS DEFINED BELOW) FROM RESPONSIBILITY, LIABILITY, CLAIMS, DEMANDS AND/OR DAMAGES (ACTUAL AND CONSEQUENTIAL) OF EVERY KIND AND NATURE, KNOWN AND UNKNOWN (INCLUDING, BUT NOT LIMITED TO, CLAIMS OF NEGLIGENCE), ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICES, INCLUDING, WITHOUT LIMITATION, YOUR HEALTHCARE DECISIONS OR OTHER DECISIONS MADE AS A RESULT OF USING THE SERVICES.</strong></p><p id="4f1e2001-570a-4efb-8f7b-bd615f51ce3d" class=""><strong>If you are a consumer who resides in California, you hereby waive your rights under California Civil Code § 1542, which provides: “A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party.”</strong></p><h1 id="c97a7f8d-30a7-4e0e-b1f9-cff84bc78b53" class="">User Accounts and Account Security</h1><p id="1eeed95d-9000-47a4-91af-4ff1a9700741" class="">You may need to register for an account to access some or all of our Services. If you register for an account, you must provide accurate account information and promptly update this information if it changes. You also must maintain the security of your account and promptly notify us if you discover or suspect that someone has accessed your account without your permission. If you permit others to use your account credentials, you are responsible for the activities of such users that occur in connection with your account. We reserve the right to reclaim usernames, including on behalf of businesses or individuals that hold legal claim, including trademark rights, in those usernames.</p><h1 id="a3954a80-a723-4be6-abe6-0f70d9053b37" class="">User Content</h1><p id="20587853-3337-4563-8ce3-67eaa0560a5b" class="">Our Services may allow you and other users to create, post, store and share content, including messages, text, photos, videos, software and other materials (collectively, “<em><strong>User Content</strong></em>”). Except for the license you grant below, you retain all rights in and to your User Content, as between you and SoundMind.</p><p id="94e2ace8-dffe-4fcf-a327-0921cd3ff3fc" class="">You grant SoundMind a perpetual, irrevocable, nonexclusive, royalty-free, worldwide, fully paid, and sublicensable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, publicly perform and display your User Content and any name, username or likeness provided in connection with your User Content in all media formats and channels now known or later developed without compensation to you. When you post or otherwise share User Content on or through our Services, you understand that your User Content and any associated information (such as your username or profile photo) may be visible to others.</p><p id="a5756450-8f14-4b74-9a57-0716aecb4891" class="">You may not create, post, store or share any User Content that violates these Terms or for which you do not have all the rights necessary to grant us the license described above. You represent and warrant that your User Content, and our use of such content as permitted by these Terms, will not violate any rights of or cause injury to any person or entity. Although we have no obligation to screen, edit or monitor User Content, we may delete or remove User Content at any time and for any reason with or without notice.</p><h1 id="c900578f-e605-499a-84cf-0c94f67e1cbd" class="">Prohibited Conduct and Content</h1><p id="e41183cd-21ec-4ec0-be1c-5d792e127703" class="">You will not violate any applicable law, contract, intellectual property right or other third-party right or commit a tort, and you are solely responsible for your conduct while using our Services. You will not:</p><ul id="61abc42c-202f-49bb-befe-66f8f7fec6f3" class="bulleted-list"><li style="list-style-type:disc">Engage in any harassing, threatening, intimidating, predatory or stalking conduct;</li></ul><ul id="304db04e-e4e2-46d8-aa91-81870bc8f0ba" class="bulleted-list"><li style="list-style-type:disc">Use or attempt to use another user’s account without authorization from that user and SoundMind;</li></ul><ul id="0f81700a-6947-487f-bc8d-69c636f505b9" class="bulleted-list"><li style="list-style-type:disc">Impersonate or post on behalf or any person or entity or otherwise misrepresent your affiliation with a person or entity;</li></ul><ul id="6d40a976-b0db-4869-9b33-6266f9f3cac0" class="bulleted-list"><li style="list-style-type:disc">Sell, resell or commercially use our Services;</li></ul><ul id="d7cd889c-c3a1-4250-990a-c0db3058d050" class="bulleted-list"><li style="list-style-type:disc">Copy, reproduce, distribute, publicly perform or publicly display all or portions of our Services, except as expressly permitted by us or our licensors;</li></ul><ul id="8d629df7-81c2-4b5f-a279-afbe8fac7419" class="bulleted-list"><li style="list-style-type:disc">Modify our Services, remove any proprietary rights notices or markings, or otherwise make any derivative works based upon our Services;</li></ul><ul id="1189b717-2bc5-420a-944b-710c2bbee919" class="bulleted-list"><li style="list-style-type:disc">Use our Services other than for their intended purpose and in any manner that could interfere with, disrupt, negatively affect or inhibit other users from fully enjoying our Services or that could damage, disable, overburden or impair the functioning of our Services in any manner;</li></ul><ul id="23fc6f05-19fe-4898-a57f-d4e48d9c6b77" class="bulleted-list"><li style="list-style-type:disc">Reverse engineer any aspect of our Services or do anything that might discover source code or bypass or circumvent measures employed to prevent or limit access to any part of our Services;</li></ul><ul id="3f59fdb7-ce84-43c5-978d-40131fe78593" class="bulleted-list"><li style="list-style-type:disc">Attempt to circumvent any content-filtering techniques we employ or attempt to access any feature or area of our Services that you are not authorized to access;</li></ul><ul id="c7efd805-69eb-4ef5-9ea3-b0d8a2c02cf6" class="bulleted-list"><li style="list-style-type:disc">Use any data mining, robots or similar data gathering or extraction methods designed to scrape or extract data from our Services;</li></ul><ul id="b5fef38a-74a2-40f1-8f61-ef0cb975c971" class="bulleted-list"><li style="list-style-type:disc">Develop or use any applications that interact with our Services without our prior written consent;</li></ul><ul id="a9e4c17a-c793-4a1a-95b7-bc86275a1e16" class="bulleted-list"><li style="list-style-type:disc">Send, distribute or post spam, unsolicited or bulk commercial electronic communications, chain letters, or pyramid schemes;</li></ul><ul id="1ffcec60-0999-4db1-86b4-199c27a82f12" class="bulleted-list"><li style="list-style-type:disc">Bypass or ignore instructions contained in our robots.txt file; or</li></ul><ul id="8fe6ca0b-3d17-4da5-98b7-a9685bba12d2" class="bulleted-list"><li style="list-style-type:disc">Use our Services for any illegal or unauthorized purpose, or engage in, encourage or promote any activity that violates these Terms.</li></ul><p id="281a1496-ee23-4bfb-aa7d-c1f3247b405c" class="">You may also post or otherwise share only User Content that is nonconfidential and that you have all necessary rights to disclose. You may not create, post, store or share any User Content that:</p><ul id="ceb142ad-f372-4e4f-9ffa-be38d9180e93" class="bulleted-list"><li style="list-style-type:disc">Is unlawful, libelous, defamatory, obscene, pornographic, indecent, lewd, suggestive, harassing, threatening, invasive of privacy or publicity rights, abusive, inflammatory or fraudulent;</li></ul><ul id="80e21ba2-efda-4a19-a028-38fa5e9fc0ab" class="bulleted-list"><li style="list-style-type:disc">Would constitute, encourage or provide instructions for a criminal offense, violate the rights of any party or otherwise create liability or violate any local, state, national or international law;</li></ul><ul id="81a96037-d51c-4417-9a95-99b9a8f06b51" class="bulleted-list"><li style="list-style-type:disc">May infringe any patent, trademark, trade secret, copyright or other intellectual or proprietary right of any party;</li></ul><ul id="fb1f9754-5f8a-42e4-931b-16d6daf6dfdc" class="bulleted-list"><li style="list-style-type:disc">Contains or depicts any statements, remarks or claims that do not reflect your honest views and experiences;</li></ul><ul id="74c38246-c0b8-4846-85f4-3fdc433636eb" class="bulleted-list"><li style="list-style-type:disc">Impersonates, or misrepresents your affiliation with, any person or entity;</li></ul><ul id="97d363fe-96ec-4a27-9ff8-8aa587ca63d1" class="bulleted-list"><li style="list-style-type:disc">Contains any unsolicited promotions, political campaigning, advertising or solicitations;</li></ul><ul id="a8fc33e1-43b4-4af8-8773-140925a379bf" class="bulleted-list"><li style="list-style-type:disc">Contains any private or personal information of a third party without such third party’s consent;</li></ul><ul id="cf423516-656d-4428-9a30-02d1ed0eed03" class="bulleted-list"><li style="list-style-type:disc">Contains any viruses, corrupted data or other harmful, disruptive or destructive files or content; or</li></ul><ul id="b8ac1274-a5ca-4a67-a51b-c97ba5dfcc29" class="bulleted-list"><li style="list-style-type:disc">In our sole judgment, is objectionable, restricts or inhibits any other person from using or enjoying our Services, or may expose SoundMind or others to any harm or liability of any type.<p id="ff269212-8c28-4d8f-9638-653edaf8c7b8" class="">Enforcement of this Section 6 is solely at SoundMind’s discretion, and failure to enforce this section in some instances does not constitute a waiver of our right to enforce it in other instances. In addition, this Section 6 does not create any private right of action on the part of any third party or any reasonable expectation that the Services will not contain any content that is prohibited by such rules.</p></li></ul><h1 id="83a55143-5bb2-44cd-966b-f7c2566a86a7" class="">Ownership; Limited License</h1><p id="e4ca20c0-2b30-4619-8f2e-b2a54e2f15e4" class="">The Services, including the text, graphics, images, photographs, videos, illustrations and other content contained therein, are owned by SoundMind or our licensors and are protected under both United States and foreign laws. Except as explicitly stated in these Terms, all rights in and to the Services are reserved by us or our licensors. Subject to your compliance with these Terms, you are hereby granted a limited, nonexclusive, nontransferable, non-sublicensable, revocable license to access and use our Services for your own personal, noncommercial use. Any use of the Services other than as specifically authorized herein, without our prior written permission, is strictly prohibited, will terminate the license granted herein and violate our intellectual property rights.</p><h1 id="a51c46c0-eac6-42ff-8b44-0d9e82d5be2e" class="">Trademarks</h1><p id="da7ee032-5baf-46bc-b997-9b7b03810815" class="">SoundMind and our logos, our product or service names, our slogans and the look and feel of the Services are trademarks of SoundMind and may not be copied, imitated or used, in whole or in part, without our prior written permission. All other trademarks, registered trademarks, product names and company names or logos mentioned on the Services are the property of their respective owners. Reference to any products, services, processes or other information by trade name, trademark, manufacturer, supplier or otherwise does not constitute or imply endorsement, sponsorship or recommendation by us.</p><h1 id="a340f824-1149-463b-b879-80179830e905" class="">Feedback</h1><p id="468e9930-e9a8-42b1-9d21-63f2cf89d2f1" class="">You may voluntarily post, submit or otherwise communicate to us any questions, comments, suggestions, ideas, original or creative materials or other information about SoundMind or our Services (collectively, “<em><strong>Feedback</strong></em>”). You understand that we may use such Feedback for any purpose, commercial or otherwise, without acknowledgment or compensation to you, including, without limitation, to develop, copy, publish, or improve the Feedback in SoundMind’s sole discretion. You understand that SoundMind may treat Feedback as nonconfidential.</p><h1 id="b3492bc8-6682-4ee2-bb51-23b0f9922a9b" class="">Third-Party Content</h1><p id="db16cc7a-5b37-4dab-a98a-0786dbe2e5f4" class="">We may provide information about third-party products, services, activities or events, or we may allow third parties to make their content and information available on or through the Services (collectively, “<em><strong>Third-Party Content</strong></em>”). We provide Third-Party Content as a service to those interested in such content. Your dealings or correspondence with third parties and your use of or interaction with any Third-Party Content are solely between you and the third party. SoundMind does not control or endorse, and makes no representations or warranties regarding, any Third-Party Content, and your access to and use of such Third-Party Content is at your own risk.</p><h1 id="3fd0b2b9-07ad-433b-a57e-14266bbabf23" class="">Indemnification</h1><p id="c1d6ba95-6037-4eb7-a9b1-7c694cef1980" class="">To the fullest extent permitted by applicable law, you will indemnify, defend and hold harmless SoundMind and our officers, directors, agents, partners and employees (individually and collectively, the “<em><strong>SoundMind Parties</strong></em>”) from and against any losses, liabilities, claims, demands, damages, expenses or costs arising out of or related to (a) your User Content or Feedback; (b) your violation of these Terms; (c) your violation, misappropriation or infringement of any rights of another (including intellectual property rights or privacy rights); or (d) your conduct in connection with the Services.</p><h1 id="8163380c-a17c-4706-a1f1-576e47e01d09" class="">Limitation of Liability</h1><p id="d153a58a-ebe3-4fde-a3ec-a529af05d74c" class=""><strong>To the fullest extent permitted by applicable law, SoundMind and the other SoundMind Parties will not be liable to you under any theory of liability—whether based in contract, tort, negligence, warranty, or otherwise—for any indirect, consequential, exemplary, incidental, punitive or special damages or lost profits, even if SoundMind or the other SoundMind Parties have been advised of the possibility of such damages.</strong></p><p id="f6554b9b-c1ad-432a-b826-b803aa190f44" class=""><strong>The total liability of SoundMind and the other SoundMind Parties for any claim arising out of or relating to these Terms or our Services, regardless of the form of the action, is limited to the greater of (a) $100 and (b) the amount paid by you to use our Services.</strong></p><p id="1e8eab2d-b60f-45e2-86ae-b5f1f96b8de9" class=""><strong>The limitations set forth in this Section 13 will not limit or exclude liability for the gross negligence, fraud or intentional misconduct of SoundMind or the other SoundMind Parties or for any other matters in which liability cannot be excluded or limited under applicable law. Additionally, some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so the above limitations or exclusions may not apply to you.</strong></p><h1 id="0da3fd82-1a42-4f1f-9042-574c959c25a1" class="">Transfer and Processing Data</h1><p id="3292c56c-ed2b-484d-bcb9-8bca52490271" class="">In order for us to provide our Services, you agree that we may process, transfer and store information about you in the United States and other countries, where you may not have the same rights and protections as you do under local law.</p><h1 id="a79f3f81-c3eb-4b52-8b66-f9cb3d11776a" class="">Dispute Resolution; Binding Arbitration</h1><p id="26699d68-d302-4e30-b665-d3c9015d60f4" class=""><strong>Please read the following section carefully because it requires you to arbitrate certain disputes and claims with SoundMind and limits the manner in which you can seek relief from us, unless you opt out of arbitration by following the instructions set forth below. No class or representative actions or arbitrations are allowed under this arbitration agreement.</strong> <strong>In addition, arbitration precludes you from suing in court or having a jury trial.</strong></p><p id="38bc0619-a0a1-44e0-a033-527523097a61" class=""><strong>No Representative Actions. You and SoundMind agree that any dispute arising out of or related to these Terms or our Services is personal to you and SoundMind and that any dispute will be resolved solely through individual action, and will not be brought as a class arbitration, class action or any other type of representative proceeding.</strong></p><p id="ef3f7044-be4b-4189-bebf-1ed9b3dec87a" class=""><strong>Arbitration of Disputes.</strong> Except for small claims disputes in which you or SoundMind seeks to bring an individual action in small claims court located in the county of your billing address or disputes in which you or SoundMind seeks injunctive or other equitable relief for the alleged unlawful use of intellectual property, <strong>you and SoundMind waive your rights to a jury trial and to have any dispute arising out of or related to these Terms or our Services resolved in court</strong>. Instead, for any dispute or claim that you have against SoundMind or relating in any way to the Services, you agree to first contact SoundMind and attempt to resolve the claim informally by sending a written notice of your claim (“<em><strong>Notice</strong></em>”) to SoundMind by email at support@soundmind.app or by mail addressed to 2618 San Miguel Drive, Newport Beach, CA 92260. The Notice must (a) include your name, residence address, email address, and telephone number; (b) describe the nature and basis of the claim; and (c) set forth the specific relief sought. Our notice to you will be similar in form to that described above. If you and SoundMind cannot reach an agreement to resolve the claim within thirty (30) days after such Notice is received, then either party may submit the dispute to binding arbitration administered by JAMS or, under the limited circumstances set forth above, in court. All disputes submitted to JAMS will be resolved through confidential, binding arbitration before one arbitrator. Arbitration proceedings will be held in Los Angeles County, California in accordance with the JAMS Streamlined Arbitration Rules and Procedures (“<em><strong>JAMS Rules</strong></em>”). The most recent version of the JAMS Rules are available on the <a href="https://www.jamsadr.com/rules-streamlined-arbitration/">JAMS website</a> and are hereby incorporated by reference. You either acknowledge and agree that you have read and understand the JAMS Rules or waive your opportunity to read the JAMS Rules and waive any claim that the JAMS Rules are unfair or should not apply for any reason.</p><p id="d2f82d73-db32-46d1-abcb-40f7ff152e8d" class="">You and SoundMind agree that these Terms affect interstate commerce and that the enforceability of this Section 15 will be substantively and procedurally governed by the Federal Arbitration Act, 9 U.S.C. § 1, <em>et seq</em>. (the “<em><strong>FAA</strong></em>”), to the maximum extent permitted by applicable law. As limited by the FAA, these Terms and the JAMS Rules, the arbitrator will have exclusive authority to make all procedural and substantive decisions regarding any dispute and to grant any remedy that would otherwise be available in court, including the power to determine the question of arbitrability. The arbitrator may conduct only an individual arbitration and may not consolidate more than one individual’s claims, preside over any type of class or representative proceeding or preside over any proceeding involving more than one individual.</p><p id="f281bcc1-d5dd-4b5f-9073-b3dcf7127bce" class="">The arbitrator, SoundMind, and you will maintain the confidentiality of any arbitration proceedings, judgments and awards, including, but not limited to, all information gathered, prepared and presented for purposes of the arbitration or related to the dispute(s) therein. The arbitrator will have the authority to make appropriate rulings to safeguard confidentiality, unless the law provides to the contrary. The duty of confidentiality does not apply to the extent that disclosure is necessary to prepare for or conduct the arbitration hearing on the merits, in connection with a court application for a preliminary remedy or in connection with a judicial challenge to an arbitration award or its enforcement, or to the extent that disclosure is otherwise required by law or judicial decision.</p><p id="efd766b8-1921-4663-b1a2-31b35231c72c" class="">You and SoundMind agree that for any arbitration you initiate, you will pay the filing fee and SoundMind will pay the remaining JAMS fees and costs. For any arbitration initiated by SoundMind, SoundMind will pay all JAMS fees and costs. You and SoundMind agree that the state or federal courts of the State of California and the United States sitting in Los Angeles County, California have exclusive jurisdiction over any appeals and the enforcement of an arbitration award.</p><p id="ce98694e-cc62-4761-9624-0623fec57aaf" class=""><strong>Any claim arising out of or related to these Terms or our Services must be filed within one year after such claim arose; otherwise, the claim is permanently barred, which means that you and SoundMind will not have the right to assert the claim.</strong></p><p id="c43fde9b-14d9-4e13-bad2-a202bad6a7de" class=""><strong>You have the right to opt out of binding arbitration within 30 days of the date you first accepted the terms of this Section 15 by sending an email to support@soundmind.app</strong>. In order to be effective, the opt-out notice must include your full name and address and clearly indicate your intent to opt out of binding arbitration. By opting out of binding arbitration, you are agreeing to resolve disputes in accordance with Section 16.</p><p id="38f36240-9f7e-49ca-bb86-6d54d4b98d58" class="">If any portion of this Section 15 is found to be unenforceable or unlawful for any reason, (a) the unenforceable or unlawful provision shall be severed from these Terms; (b) severance of the unenforceable or unlawful provision shall have no impact whatsoever on the remainder of this Section 15 or the parties’ ability to compel arbitration of any remaining claims on an individual basis pursuant to this Section 15; and (c) to the extent that any claims must therefore proceed on a class, collective, consolidated, or representative basis, such claims must be litigated in a civil court of competent jurisdiction and not in arbitration, and the parties agree that litigation of those claims shall be stayed pending the outcome of any individual claims in arbitration. Further, if any part of this Section 15 is found to prohibit an individual claim seeking public injunctive relief, that provision will have no effect to the extent such relief is allowed to be sought out of arbitration, and the remainder of this Section 15 will be enforceable.</p><h1 id="15ce49d1-922e-4596-9cfa-a4c164daba9a" class="">Governing Law and Venue</h1><p id="d834c061-7985-473e-9005-1773e8b46d4f" class="">Any dispute arising from these Terms and your use of the Services will be governed by and construed and enforced in accordance with the laws of the State of California, except to the extent preempted by U.S. federal law, without regard to conflict of law rules or principles (whether of the State of California or any other jurisdiction) that would cause the application of the laws of any other jurisdiction. Any dispute between the parties that is not subject to arbitration or cannot be heard in small claims court will be resolved in the state or federal courts of the State of California and the United States, respectively, sitting in Los Angeles County, California.</p><h1 id="42dcde80-920b-4a9f-86db-62f24ed640a3" class="">Modifying and Terminating our Services</h1><p id="16541068-6e5c-467b-9ec9-913b22dacf6b" class="">We reserve the right to modify our Services or to suspend or stop providing all or portions of our Services at any time. You also have the right to stop using our Services at any time. We are not responsible for any loss or harm related to your inability to access or use our Services.</p><h1 id="abfc20cd-04f0-4770-88cf-b7a3cda5e995" class="">Severability</h1><p id="afd9cca8-e776-4a57-bbd4-5cf9c0f645c9" class="">If any provision or part of a provision of these Terms is unlawful, void or unenforceable, that provision or part of the provision is deemed severable from these Terms and does not affect the validity and enforceability of any remaining provisions.</p><h1 id="534c3540-66bb-4722-b627-9741dda71fea" class="">Additional Terms Applicable to Mobile Devices</h1><p id="4b52aa51-42f9-411c-81c0-e28fd90bd551" class="">The following terms apply if you install, access, or use the Services on any device that contains the iOS mobile operating system (the “<em><strong>iOS App</strong></em>”) developed by Apple Inc. (“<em><strong>Apple</strong></em>”).</p><ul id="412669e6-220f-443c-b27c-a2abee431093" class="bulleted-list"><li style="list-style-type:disc">Acknowledgement. You acknowledge that these Terms are concluded solely between us, and not with Apple, and SoundMind, not Apple, is solely responsible for the iOS App and the content thereof. You further acknowledge that the usage rules for the iOS App are subject to any additional restrictions set forth in the Usage Rules for the Apple iOS App Store Terms of Service as of the date you download the App, and in the event of any conflict, the Usage Rules in the App Store will govern if they are more restrictive. You acknowledge and agree that you have had the opportunity to review the Usage Rules.</li></ul><ul id="23f343ae-9ab0-4051-980d-793c1a818248" class="bulleted-list"><li style="list-style-type:disc">Scope of License. The license granted to you is limited to a non-transferable license to use the iOS App on any iPhone, iPod touch or iPad that you own or control as permitted by the Usage Rules set forth in the Apple App Store Terms of Service.</li></ul><ul id="84cc759f-72bd-4a28-8552-3a99b597cf7d" class="bulleted-list"><li style="list-style-type:disc">Maintenance and Support. You and SoundMind acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App.</li></ul><ul id="43f5f3a8-ec50-4b11-ac1a-63221586a687" class="bulleted-list"><li style="list-style-type:disc">Warranty. You acknowledge that Apple is not responsible for any product warranties, whether express or implied by law, with respect to the App. In the event of any failure of the iOS App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price, if any, paid to Apple for the iOS App by you; and to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App. The parties acknowledge that to the extent that there are any applicable warranties, any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any such applicable warranty would be the sole responsibility of SoundMind. However, you understand and agree that in accordance with these Terms, SoundMind has disclaimed all warranties of any kind with respect to the App, and therefore, there are no warranties applicable to the App.</li></ul><ul id="e3f1a3d3-2f7a-4b9e-a5a2-d235dda7f2fd" class="bulleted-list"><li style="list-style-type:disc">Product Claims. You and SoundMind acknowledge that as between Apple and SoundMind, SoundMind, not Apple, is responsible for addressing any claims relating to the iOS App or your possession and/or use of the iOS App, including, but not limited to (a) product liability claims, (b) any claim that the iOS App fails to conform to any applicable legal or regulatory requirement, and (c) claims arising under consumer protection or similar legislation.</li></ul><ul id="f4fbfe17-b0a4-42f8-a723-61b13dcd65c4" class="bulleted-list"><li style="list-style-type:disc">Intellectual Property Rights. The parties acknowledge that, in the event of any third-party claim that the iOS App or your possession and use of the iOS App infringe that third party’s intellectual property rights, SoundMind, and not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim to the extent required under these Terms.</li></ul><ul id="239aa549-19ee-4d66-890c-39d5dca3014f" class="bulleted-list"><li style="list-style-type:disc">Legal Compliance. You represent and warrant that (a) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a “terrorist supporting” country, and (b) you are not listed on any U.S. Government list of prohibited or restricted parties.</li></ul><ul id="5e8c3e89-b8aa-455f-86c2-e57437bffb90" class="bulleted-list"><li style="list-style-type:disc">Developer Name and Address. Any questions, complaints or claims with respect to the iOS App should be directed to:</li></ul><p id="9d6d6264-9bb1-430d-a60b-fcc7a125fe15" class="">SoundMind</p><p id="2013b044-b4cd-45b5-9988-153590aca4bd" class="">2618 San Miguel Drive</p><p id="a5752f70-e4b2-463d-9faa-41ed87e9c4e8" class="">Newport Beach, CA 92260</p><p id="4df0b924-6deb-42fb-9448-3196f5d621c2" class="">support@soundmind.app</p><ul id="430bc931-93ba-48ab-870b-69ea03d29ac7" class="bulleted-list"><li style="list-style-type:disc">Third-Party Terms of Agreement. You agree to comply with any applicable third-party terms when using the Services.</li></ul><ul id="c5d4523b-4dd4-4598-a5ff-ecbaeeb92be2" class="bulleted-list"><li style="list-style-type:disc">Third-Party Beneficiary. The parties acknowledge and agree that Apple, and Apple’s subsidiaries, are third-party beneficiaries of these Terms, and that, upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary thereof).</li></ul><p id="12638507-5149-4e50-9b46-77e5399ef0d2" class="">The following terms apply if you install, access, or use the Services on any device that contains the Android mobile operating system (the “<em><strong>Android App</strong></em>”) developed by Google, Inc. (“<em><strong>Google</strong></em>”):</p><ul id="d5aa5963-7b11-440b-856d-08f96173752e" class="bulleted-list"><li style="list-style-type:disc">You acknowledge that these Terms are between You and us only, and not with Google.</li></ul><ul id="11b1c869-383c-4957-9f91-cdbf0bd50e5d" class="bulleted-list"><li style="list-style-type:disc">Your use of our Android App must comply with Google’s then-current Android Market Terms of Service.</li></ul><ul id="2129d7e7-c5d2-4100-8c18-633fb46275eb" class="bulleted-list"><li style="list-style-type:disc">Google is only a provider of the Android Market where You obtained the Android App. We, and not Google, are solely responsible for our Android App and the Services and Content available thereon. Google has no obligation or liability to You with respect to Our Android App or these Terms.</li></ul><ul id="ef90b104-3f09-4b12-afb5-83864a27ec07" class="bulleted-list"><li style="list-style-type:disc">You acknowledge and agree that Google is a third-party beneficiary to the Terms as they relate to our Android App.</li></ul><h1 id="6724be96-7f4d-4256-914b-252558fe7ae4" class="">Miscellaneous</h1><p id="56b04b59-680c-4040-a810-7393ac1ddcc6" class="">These Terms constitute the entire agreement between you and SoundMind relating to your access to and use of our Services. Notwithstanding any other provisions of these Terms, Sections 3, 4, 5, 7, 8, 9, 11, 12, 14, 15, 16, 17, 18, and 19 survive any expiration or termination of these terms. The failure of SoundMind to exercise or enforce any right or provision of these Terms will not operate as a waiver of such right or provision. The section titles in these Terms are for convenience only and have no legal or contractual effect. Except as otherwise provided herein, these Terms are intended solely for the benefit of the parties and are not intended to confer third-party beneficiary rights upon any other person or entity. You agree that communications and transactions between us may be conducted electronically. These Terms may not be transferred, assigned or delegated by you, by operation of law or otherwise, without our prior written consent, and any attempted transfer, assignment or delegation without such consent will be void and without effect. We may freely transfer, assign or delegate these Terms or the Services, in whole or in part, without your prior written consent. Under California Civil Code Section 1789.3, California consumers are entitled to the following specific consumer rights notice: The Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 1625 N. Market Blvd., Suite N-112, Sacramento, California 95834, or by telephone at 1 (800) 952-5210.</p><p id="c6d94204-fbce-4f6c-a253-1d97e90155f1" class="">
-</p></div></article></body></html>
+<html>
+<div>
+    <div style="clear:both;">
+        <p style="margin-top:0pt; margin-bottom:0pt;">&nbsp;</p>
+    </div>
+    <p style="margin-top:0pt; margin-bottom:0pt; text-align:center; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><strong><span style="font-family:'Sofia Pro'; font-variant:small-caps;">SOUNDMIND TERMS OF SERVICE</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><a name="h.30j0zll"></a><strong><em><span style="font-family:'Sofia Pro';">Last Updated: [10/15/2021]</span></em></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><a name="h.1fob9te"></a><span style="font-family:'Sofia Pro';">These Terms of Service (&ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">Terms</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;) apply to your access to and use of the websites and other online products and services (collectively, the &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">Services</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;) provided by SoundMind Corp. (&ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">SoundMind</span></em></strong><span style="font-family:'Sofia Pro';">,&rdquo; &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">we</span></em></strong><span style="font-family:'Sofia Pro';">,&rdquo; or &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">us</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;).&nbsp;</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">PLEASE READ THESE TERMS CAREFULLY, INCLUDING THE MANDATORY ARBITRATION PROVISION IN SECTION 15, WHICH REQUIRES THAT DISPUTES BE RESOLVED BY FINAL AND BINDING ARBITRATION ON AN INDIVIDUAL BASIS, NOT A CLASS-WIDE OR CONSOLIDATED BASIS. IF YOU DO NOT WISH TO BE SUBJECT TO ARBITRATION, YOU MAY OPT OUT OF THE ARBITRATION PROVISION BY FOLLOWING THE INSTRUCTIONS PROVIDED IN SECTION 15.&nbsp;</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">By accessing or using our Services, you agree to be bound by these Terms and all terms incorporated by reference. If you do not agree to these Terms in their entirety, do not use our Services.</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">We may make changes to these Terms from time to time. If we make changes, we will provide you with notice of such changes, such as by sending an email, providing a notice through our Services or updating the date at the top of these Terms. Unless we say otherwise in our notice, the amended Terms will be effective immediately, and your continued use of our Services after we provide such notice will confirm your acceptance of the changes. If you do not agree to the amended Terms, you must stop using our Services.</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">If you have any questions about these Terms or our Services, please contact us at support@soundmind.app.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">1.</span><span style="width:32.07pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">Privacy</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">For information about how we collect, use, share or otherwise process information about you, please see our Privacy Policy at&nbsp;</span><u><span style="font-family:'Sofia Pro'; color:#0563c1;">https://www.soundmind.app/privacy-policy</span></u><span style="font-family:'Sofia Pro';">.&nbsp;</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">2.</span><span style="width:31.08pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">Eligibility</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You must be at least 18 years of age (or the age of legal majority where you live) to use our Services. If you use our Services on behalf of another person or entity, (a) all references to &ldquo;you&rdquo; throughout these Terms will include that person or entity, (b) you represent that you are authorized to accept these Terms on that person&rsquo;s or entity&rsquo;s behalf, and (c) in the event you or the person or entity violates these Terms, the person or entity agrees to be responsible to us.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">3.</span><span style="width:31.06pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">Medical Disclaimers and Release</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">Please closely review the disclaimers and release in this Section 3 before using our Services. By using our Services, you expressly acknowledge that you have read, understand, and agreed to the disclaimers and release in this Section 3, in addition to the other terms in these Terms.&nbsp;</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">By using our Services, you understand and agree that:</span></strong></p>
+    <ul style="margin:0pt; padding-left:0pt;" type="disc">
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">Use of and access to our Services does not create a doctor-patient relationship;</span></strong></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">Our Services are non-clinical in nature, provided for informational purposes only, and not intended, designed, or implied to diagnose, prevent,</span></strong><strong><span style="font-family:'Sofia Pro';">&nbsp;</span></strong><strong><span style="font-family:'Sofia Pro';">or treat any condition or disease, to ascertain the state of your health, or to be a substitute for professional medical care;</span></strong></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">SoundMind is not a licensed medical care provider and does not engage in, and has no expertise in, diagnosing, examining, or treating medical conditions of any kind, or in prescribing medications or treatments or determining the effect of any specific treatment on a medical condition;</span></strong></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">SoundMind does not provide emergency services and may not contact you or anyone on your behalf with respect to your medical condition or treatment;</span></strong></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">You are responsible for your own medical care, treatment and oversight and that you should always seek the advice of your physician or other qualified healthcare provider with any questions or concerns you may have regarding your health; and</span></strong></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">You should never disregard professional medical advice or delay in seeking it because of something you have read or received using the Services.</span></strong></li>
+    </ul>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">Your use of our Services is at your sole risk. Our Services and any products or services made available therein, and any information related to the foregoing made available on the Services are provided &ldquo;as is&rdquo; and &ldquo;as available&rdquo; without warranties of any kind, either express or implied, including, but not limited to, implied warranties of merchantability, fitness for a particular purpose, title, and non-infringement. Without limiting the foregoing, we make no warranties that our Services, including, without limitation, the descriptions of any products or services made available on our Services are accurate, complete, reliable, current, or error-free.</span></strong><strong><span style="font-family:'Sofia Pro';">&nbsp;&nbsp;</span></strong><strong><span style="font-family:'Sofia Pro';">You assume the entire risk as to the quality, performance, and outcomes of the Services.</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">Information and statements regarding the products or services made available on our Services are not intended to diagnose, treat, cure, or prevent any disease.</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, YOU RELEASE SOUNDMIND AND THE OTHER SOUNDMIND PARTIES (AS DEFINED BELOW) FROM RESPONSIBILITY, LIABILITY, CLAIMS, DEMANDS AND/OR DAMAGES (ACTUAL AND CONSEQUENTIAL) OF EVERY KIND AND NATURE, KNOWN AND UNKNOWN (INCLUDING, BUT NOT LIMITED TO, CLAIMS OF NEGLIGENCE), ARISING OUT OF OR RELATED TO YOUR USE OF THE SERVICES, INCLUDING, WITHOUT LIMITATION, YOUR HEALTHCARE DECISIONS OR OTHER DECISIONS MADE AS A RESULT OF USING THE SERVICES.</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">If you are a consumer who resides in California, you hereby waive your rights under California Civil Code &sect; 1542, which provides: &ldquo;A general release does not extend to claims that the creditor or releasing party does not know or suspect to exist in his or her favor at the time of executing the release and that, if known by him or her, would have materially affected his or her settlement with the debtor or released party.&rdquo;</span></strong></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">4.</span><span style="width:30.4pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">User Accounts and Account Security</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You may need to register for an account to access some or all of our Services. If you register for an account, you must provide accurate account information and promptly update this information if it changes. You also must maintain the security of your account and promptly notify us if you discover or suspect that someone has accessed your account without your permission. If you permit others to use your account credentials, you are responsible for the activities of such users that occur in connection with your account. We reserve the right to reclaim usernames, including on behalf of businesses or individuals that hold legal claim, including trademark rights, in those usernames.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">5.</span><span style="width:30.95pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">User Content</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><a name="h.3znysh7"></a><span style="font-family:'Sofia Pro';">Our Services may allow you and other users to create, post, store and share content, including messages, text, photos, videos, software and other materials (collectively, &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">User Content</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;). Except for the license you grant below, you retain all rights in and to your User Content, as between you and SoundMind.</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You grant SoundMind a perpetual, irrevocable, nonexclusive, royalty-free, worldwide, fully paid, and sublicensable license to use, reproduce, modify, adapt, publish, translate, create derivative works from, distribute, publicly perform and display your User Content and any name, username or likeness provided in connection with your User Content in all media formats and channels now known or later developed without compensation to you.</span><span style="font-family:'Sofia Pro';">&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">When you post or otherwise share User Content on or through our Services, you understand that your User Content and any associated information (such as your username or profile photo) may be visible to others.</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You may not create, post, store or share any User Content that violates these Terms or for which you do not have all the rights necessary to grant us the license described above. You represent and warrant that your User Content, and our use of such content as permitted by these Terms, will not violate any rights of or cause injury to any person or entity. Although we have no obligation to screen, edit or monitor User Content, we may delete or remove User Content at any time and for any reason with or without notice.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">6.</span><span style="width:30.35pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="_Ref523769302"><span style="font-family:'Sofia Pro';">Prohibited Conduct and Content</span></a></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You will not violate any applicable law, contract, intellectual property right or other third-party right or commit a tort, and you are solely responsible for your conduct while using our Services. You will not:&nbsp;</span></p>
+    <ul style="margin:0pt; padding-left:0pt;" type="disc">
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><a name="_Hlk45545752"><span style="font-family:'Sofia Pro';">Engage in any harassing, threatening, intimidating, predatory or stalking conduct;</span></a></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Use or attempt to use another user&rsquo;s account without authorization from that user and SoundMind;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Impersonate or post on behalf or any person or entity or otherwise misrepresent your affiliation with a person or entity;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Sell, resell or commercially use our Services;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Copy, reproduce, distribute, publicly perform or publicly display all or portions of our Services, except as expressly permitted by us or our licensors;&nbsp;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Modify our Services, remove any proprietary rights notices or markings, or otherwise make any derivative works based upon our Services;&nbsp;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Use our Services other than for their intended purpose and in any manner that could interfere with, disrupt, negatively affect or inhibit other users from fully enjoying our Services or that could damage, disable, overburden or impair the functioning of our Services in any manner;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Reverse engineer any aspect of our Services or do anything that might discover source code or bypass or circumvent measures employed to prevent or limit access to any part of our Services;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Attempt to circumvent any content-filtering techniques we employ or attempt to access any feature or area of our Services that you are not authorized to access;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Use any data mining, robots or similar data gathering or extraction methods designed to scrape or extract data from our Services;&nbsp;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Develop or use any applications that interact with our Services without our prior written consent;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Send, distribute or post spam, unsolicited or bulk commercial electronic communications, chain letters, or pyramid schemes;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Bypass or ignore instructions contained in our robots.txt file; or</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Use our Services for any illegal or unauthorized purpose, or engage in, encourage or promote any activity that violates these Terms.</span></li>
+    </ul>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You may also post or otherwise share only User Content that is nonconfidential and that you have all necessary rights to disclose.</span><span style="font-family:'Sofia Pro';">&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">You may not create, post, store or share any User Content that:</span></p>
+    <ul style="margin:0pt; padding-left:0pt;" type="disc">
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Is unlawful, libelous, defamatory, obscene, pornographic, indecent, lewd, suggestive, harassing, threatening, invasive of privacy or publicity rights, abusive, inflammatory or fraudulent;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Would constitute, encourage or provide instructions for a criminal offense, violate the rights of any party or otherwise create liability or violate any local, state, national or international law;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">May infringe any patent, trademark, trade secret, copyright or other intellectual or proprietary right of any party;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Contains or depicts any statements, remarks or claims that do not reflect your honest views and experiences;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Impersonates, or misrepresents your affiliation with, any person or entity;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Contains any unsolicited promotions, political campaigning, advertising or solicitations;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Contains any private or personal information of a third party without such third party&rsquo;s consent;</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Contains any viruses, corrupted data or other harmful, disruptive or destructive files or content; or</span></li>
+        <li style="margin-top:12pt; margin-left:26.54pt; padding-left:9.46pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">In our sole judgment, is objectionable, restricts or inhibits any other person from using or enjoying our Services, or may expose SoundMind or others to any harm or liability of any type.</span></li>
+    </ul>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">Enforcement of this Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">6 is solely at SoundMind&rsquo;s discretion, and failure to enforce this section in some instances does not constitute a waiver of our right to enforce it in other instances.</span><span style="font-family:'Sofia Pro';">&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">In addition, this Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">6 does not create any private right of action on the part of any third party or any reasonable expectation that the Services will not contain any content that is prohibited by such rules.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">7.</span><span style="width:30.55pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">Ownership; Limited License</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">The Services, including the text, graphics, images, photographs, videos, illustrations and other content contained therein, are owned by SoundMind or our licensors and are protected under both United States and foreign laws. Except as explicitly stated in these Terms, all rights in and to the Services are reserved by us or our licensors. Subject to your compliance with these Terms, you are hereby granted a limited, nonexclusive, nontransferable, non-sublicensable, revocable license to access and use our Services for your own personal, noncommercial use. Any use of the Services other than as specifically authorized herein, without our prior written permission, is strictly prohibited, will terminate the license granted herein and violate our intellectual property rights.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">8.</span><span style="width:30.55pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">Trademarks</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">SoundMind and our logos, our product or service names, our slogans and the look and feel of the Services are trademarks of SoundMind and may not be copied, imitated or used, in whole or in part, without our prior written permission. All other trademarks, registered trademarks, product names and company names or logos mentioned on the Services are the property of their respective owners. Reference to any products, services, processes or other information by trade name, trademark, manufacturer, supplier or otherwise does not constitute or imply endorsement, sponsorship or recommendation by us.&nbsp;</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">9.</span><span style="width:30.38pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="_Ref523769307"><span style="font-family:'Sofia Pro';">Feedback</span></a></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You may voluntarily post, submit or otherwise communicate to us any questions, comments, suggestions, ideas, original or creative materials or other information about SoundMind or our Services (collectively, &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">Feedback</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;). You understand that we may use such Feedback for any purpose, commercial or otherwise, without acknowledgment or compensation to you, including, without limitation, to develop, copy, publish, or improve the Feedback in SoundMind&rsquo;s sole discretion. You understand that SoundMind may treat Feedback as nonconfidential.&nbsp;</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">10.</span><span style="width:28.09pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="h.2et92p0"></a><a name="h.tyjcwt"></a><a name="h.3dy6vkm"></a><a name="h.1t3h5sf"></a><a name="h.4d34og8"></a><a name="h.2s8eyo1"></a><span style="font-family:'Sofia Pro';">Third-Party Content</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">We may provide information about third-party products, services, activities or events, or we may allow third parties to make their content and information available on or through the Services (collectively, &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">Third-Party Content</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;). We provide Third-Party Content as a service to those interested in such content. Your dealings or correspondence with third parties and your use of or interaction with any Third-Party Content are solely between you and the third party. SoundMind does not control or endorse, and makes no representations or warranties regarding, any Third-Party Content, and your access to and use of such Third-Party Content is at your own risk.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">11.</span><span style="width:29.78pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="_Ref523769311"><span style="font-family:'Sofia Pro';">Indemnification</span></a></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">To the fullest extent permitted by applicable law, you will indemnify, defend and hold harmless SoundMind and our</span><span style="font-family:'Sofia Pro';">&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">officers, directors, agents, partners and employees (individually and collectively, the &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">SoundMind Parties</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;) from and against any losses, liabilities, claims, demands, damages, expenses or costs arising out of or related to (a) your User Content or Feedback; (b)</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">your violation of these Terms; (c) your violation, misappropriation or infringement of any rights of another (including intellectual property rights or privacy rights); or (d) your conduct in connection with the Services.&nbsp;</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">12.</span><span style="width:28.79pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="_Ref523769314"><span style="font-family:'Sofia Pro';">Limitation of Liability</span></a></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">To the fullest extent permitted by applicable law, SoundMind and the other SoundMind Parties will not be liable to you under any theory of liability&mdash;whether based in contract, tort, negligence, warranty, or otherwise&mdash;for any indirect, consequential, exemplary, incidental, punitive or special damages or lost profits, even if SoundMind or the other SoundMind Parties have been advised of the possibility of such damages.</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">The total liability of SoundMind and the other SoundMind Parties for any claim arising out of or relating to these Terms or our Services, regardless of the form of the action, is limited to the greater of (a) $100 and (b) the amount paid by you to use our Services.</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt;"><strong><span style="font-family:'Sofia Pro'; font-size:10pt;">The limitations set forth in this Section</span></strong><strong><span style="font-family:'Sofia Pro'; font-size:10pt;">&nbsp;</span></strong><a href="#_Ref523769314" style="text-decoration:none;"><span style="font-family:'Sofia Pro'; color:#000000;">13</span></a><strong><span style="font-family:'Sofia Pro'; font-size:10pt;">&nbsp;will not limit or exclude liability for the gross negligence, fraud or intentional misconduct of SoundMind or the other SoundMind Parties or for any other matters in which liability cannot be excluded or limited under applicable law. Additionally, some jurisdictions do not allow the exclusion or limitation of incidental or consequential damages, so the above limitations or exclusions may not apply to you.</span></strong></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">13.</span><span style="width:28.77pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="h.3rdcrjn"></a><a name="_Ref437121737"><span style="font-family:'Sofia Pro';">Transfer and Processing Data</span></a></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">In order for us to provide our Services, you agree that we may process, transfer and store information about you in the United States and other countries, where you may not have the same rights and protections as you do under local law.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">14.</span><span style="width:28.11pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="_Ref445818749"><span style="font-family:'Sofia Pro';">Dispute Resolution; Binding Arbitration</span></a></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">Please read the following section carefully because it requires you to arbitrate certain disputes and claims with SoundMind and limits the manner in which you can seek relief from us, unless you opt out of arbitration by following the instructions set forth below. No class or representative actions or arbitrations are allowed under this arbitration agreement.</span></strong><a name="h.26in1rg"></a><strong><span style="font-family:'Sofia Pro';">&nbsp;In addition, arbitration precludes you from suing in court or having a jury trial.&nbsp;</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><strong><span style="font-family:'Sofia Pro';">No Representative Actions. You and SoundMind agree that any dispute arising out of or related to these Terms or our Services is personal to you and SoundMind and that any dispute will be resolved solely through individual action, and will not be brought as a class arbitration, class action or any other type of representative proceeding.</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt;"><strong><span style="font-family:'Sofia Pro'; font-size:10pt;">Arbitration of Disputes.&nbsp;</span></strong><span style="font-family:'Sofia Pro'; font-size:10pt;">Except for small claims disputes in which you or SoundMind seeks to bring an individual action in small claims court located in the county of your billing address or disputes in which you or SoundMind seeks injunctive or other equitable relief for the alleged unlawful use of intellectual property,&nbsp;</span><strong><span style="font-family:'Sofia Pro'; font-size:10pt;">you and SoundMind waive your rights to a jury trial and to have any dispute arising out of or related to these Terms or our Services resolved in court</span></strong><span style="font-family:'Sofia Pro'; font-size:10pt;">. Instead, for any dispute or claim that you have against SoundMind or relating in any way to the Services, you agree to first contact SoundMind and attempt to resolve the claim informally by sending a written notice of your claim (&ldquo;</span><strong><em><span style="font-family:'Sofia Pro'; font-size:10pt;">Notice</span></em></strong><span style="font-family:'Sofia Pro'; font-size:10pt;">&rdquo;) to SoundMind by email at support@soundmind.app or by mail addressed to 2618 San Miguel Drive, Newport Beach, CA 92260. The Notice must (a) include your name, residence address, email address, and telephone number; (b) describe the nature and basis of the claim; and (c) set forth the specific relief sought. Our notice to you will be similar in form to that described above. If you and SoundMind cannot reach an agreement to resolve the claim within thirty (30) days after such Notice is received, then either party may submit the dispute to binding arbitration administered by JAMS or, under the limited circumstances set forth above, in court. All disputes submitted to JAMS will be resolved through confidential, binding arbitration before one arbitrator. Arbitration proceedings will be held in Los Angeles County, California in accordance with the JAMS Streamlined Arbitration Rules and Procedures (&ldquo;</span><strong><em><span style="font-family:'Sofia Pro'; font-size:10pt;">JAMS Rules</span></em></strong><span style="font-family:'Sofia Pro'; font-size:10pt;">&rdquo;). The most recent version of the JAMS Rules are available on the&nbsp;</span><a href="https://www.jamsadr.com/rules-streamlined-arbitration/" style="text-decoration:none;"><u><span style="font-family:'Sofia Pro'; font-size:10pt; color:#0000ff;">JAMS website</span></u></a><span style="font-family:'Sofia Pro'; font-size:10pt;">&nbsp;and are hereby incorporated by reference. You either acknowledge and agree that you have read and understand the JAMS Rules or waive your opportunity to read the JAMS Rules and waive any claim that the JAMS Rules are unfair or should not apply for any reason.&nbsp;</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You and SoundMind agree that these Terms affect interstate commerce and that the enforceability of this Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">15 will be substantively and procedurally governed by the Federal Arbitration Act, 9 U.S.C. &sect; 1,&nbsp;</span><em><span style="font-family:'Sofia Pro';">et seq</span></em><span style="font-family:'Sofia Pro';">. (the &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">FAA</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;), to the maximum extent permitted by applicable law. As limited by the FAA, these Terms and the JAMS Rules, the arbitrator will have exclusive authority to make all procedural and substantive decisions regarding any dispute and to grant any remedy that would otherwise be available in court, including the power to determine the question of arbitrability. The arbitrator may conduct only an individual arbitration and may not consolidate more than one individual&rsquo;s claims, preside over any type of class or representative proceeding or preside over any proceeding involving more than one individual.&nbsp;</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">The arbitrator, SoundMind, and you will maintain the confidentiality of any arbitration proceedings, judgments and awards, including, but not limited to, all information gathered, prepared and presented for purposes of the arbitration or related to the dispute(s) therein. The arbitrator will have the authority to make appropriate rulings to safeguard confidentiality, unless the law provides to the contrary. The duty of confidentiality does not apply to the extent that disclosure is necessary to prepare for or conduct the arbitration hearing on the merits, in connection with a court application for a preliminary remedy or in connection with a judicial challenge to an arbitration award or its enforcement, or to the extent that disclosure is otherwise required by law or judicial decision.</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">You and SoundMind agree that for any arbitration you initiate, you will pay the filing fee and SoundMind will pay the remaining JAMS fees and costs. For any arbitration initiated by SoundMind, SoundMind will pay all JAMS fees and costs. You and SoundMind agree that the state or federal courts of the State of California and the United States sitting in Los Angeles County, California have exclusive jurisdiction over any appeals and the enforcement of an arbitration award.&nbsp;</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><a name="h.lnxbz9"></a><strong><span style="font-family:'Sofia Pro';">Any claim arising out of or related to these Terms or our Services must be filed within one year after such claim arose; otherwise, the claim is permanently barred, which means that you and SoundMind will not have the right to assert the claim.&nbsp;</span></strong></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><a name="h.35nkun2"></a><strong><span style="font-family:'Sofia Pro';">You have the right to opt out of binding arbitration within 30 days of the date you first accepted the terms of this Section</span></strong><strong><span style="font-family:'Sofia Pro';">&nbsp;</span></strong><strong><span style="font-family:'Sofia Pro';">15 by sending an email to support@soundmind.app</span></strong><span style="font-family:'Sofia Pro';">. In order to be effective, the opt-out notice must include your full name and address and clearly indicate your intent to opt out of binding arbitration. By opting out of binding arbitration, you are agreeing to resolve disputes in accordance with Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">16.</span></p>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">If any portion of this Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">15 is found to be unenforceable or unlawful for any reason, (a) the unenforceable or unlawful provision shall be severed from these Terms; (b) severance of the unenforceable or unlawful provision shall have no impact whatsoever on the remainder of this Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">15 or the parties&rsquo; ability to compel arbitration of any remaining claims on an individual basis pursuant to this Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">15; and (c) to the extent that any claims must therefore proceed on a class, collective, consolidated, or representative basis, such claims must be litigated in a civil court of competent jurisdiction and not in arbitration, and the parties agree that litigation of those claims shall be stayed pending the outcome of any individual claims in arbitration. Further, if any part of this Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">15 is found to prohibit an individual claim seeking public injunctive relief, that provision will have no effect to the extent such relief is allowed to be sought out of arbitration, and the remainder of this Section</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">15 will be enforceable.&nbsp;</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">15.</span><span style="width:28.66pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="h.1ksv4uv"></a><a name="_Ref437129792"><span style="font-family:'Sofia Pro';">Governing Law and Venue</span></a></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><a name="h.44sinio"></a><span style="font-family:'Sofia Pro';">Any dispute arising from these Terms and your use of the Services will be governed by and construed and enforced in accordance with the laws of the State of&nbsp;</span><a name="_Hlk45544822"><span style="font-family:'Sofia Pro';">California</span></a><span style="font-family:'Sofia Pro';">, except to the extent preempted by U.S. federal law, without regard to conflict of law rules or principles (whether of the State of California or any other jurisdiction) that would cause the application of the laws of any other jurisdiction. Any dispute between the parties that is not subject to arbitration or cannot be heard in small claims court will be resolved in the state or federal courts of the State of California and the United States, respectively, sitting in Los Angeles County, California.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">16.</span><span style="width:28.06pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="h.2jxsxqh"></a><span style="font-family:'Sofia Pro';">Modifying and Terminating our Services</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">We reserve the right to modify our Services or to suspend or stop providing all or portions of our Services at any time. You also have the right to stop using our Services at any time. We are not responsible for any loss or harm related to your inability to access or use our Services.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">17.</span><span style="width:28.26pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">Severability</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">If any provision or part of a provision of these Terms is unlawful, void or unenforceable, that provision or part of the provision is deemed severable from these Terms and does not affect the validity and enforceability of any remaining provisions.</span></p>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">18.</span><span style="width:28.27pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a name="_Ref523769325"><span style="font-family:'Sofia Pro';">Additional Terms Applicable to Mobile Devices</span></a></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">The following terms apply if you install, access, or use the Services on any device that contains the iOS mobile operating system (the &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">iOS App</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;) developed by Apple Inc. (&ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">Apple</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;).&nbsp;</span></p>
+    <ul style="margin:0pt; padding-left:0pt;" type="disc">
+        <li style="margin-top:12pt; margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Acknowledgement</span></u><span style="font-family:'Sofia Pro';">. You acknowledge that these Terms are concluded solely between us, and not with Apple, and SoundMind, not Apple, is solely responsible for the iOS App and the content thereof. You further acknowledge that the usage rules for the iOS App are subject to any additional restrictions set forth in the Usage Rules for the Apple iOS App Store Terms of Service as of the date you download the App, and in the event of any conflict, the Usage Rules in the App Store will govern if they are more restrictive. You acknowledge and agree that you have had the opportunity to review the Usage Rules.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Scope of License</span></u><span style="font-family:'Sofia Pro';">. The license granted to you is limited to a non-transferable license to use the iOS App on any iPhone, iPod touch or iPad that you own or control as permitted by the Usage Rules set forth in the Apple App Store Terms of Service.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Maintenance and Support</span></u><span style="font-family:'Sofia Pro';">. You and SoundMind acknowledge that Apple has no obligation whatsoever to furnish any maintenance and support services with respect to the App.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Warranty</span></u><span style="font-family:'Sofia Pro';">. You acknowledge that Apple is not responsible for any product warranties, whether express or implied by law, with respect to the App. In the event of any failure of the iOS App to conform to any applicable warranty, you may notify Apple, and Apple will refund the purchase price, if any, paid to Apple for the iOS App by you; and to the maximum extent permitted by applicable law, Apple will have no other warranty obligation whatsoever with respect to the App. The parties acknowledge that to the extent that there are any applicable warranties, any other claims, losses, liabilities, damages, costs or expenses attributable to any failure to conform to any such applicable warranty would be the sole responsibility of SoundMind. However, you understand and agree that in accordance with these Terms, SoundMind has disclaimed all warranties of any kind with respect to the App, and therefore, there are no warranties applicable to the App.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Product Claims</span></u><span style="font-family:'Sofia Pro';">. You and SoundMind acknowledge that as between Apple and SoundMind, SoundMind, not Apple, is responsible for addressing any claims relating to the iOS App or your possession and/or use of the iOS App, including, but not limited to (a) product liability claims, (b) any claim that the iOS App fails to conform to any applicable legal or regulatory requirement, and (c) claims arising under consumer protection or similar legislation.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Intellectual Property Rights</span></u><span style="font-family:'Sofia Pro';">. The parties acknowledge that, in the event of any third-party claim that the iOS App or your possession and use of the iOS App infringe that third party&rsquo;s intellectual property rights, SoundMind, and not Apple, will be solely responsible for the investigation, defense, settlement and discharge of any such intellectual property infringement claim to the extent required under these Terms.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Legal Compliance</span></u><span style="font-family:'Sofia Pro';">. You represent and warrant that (a) you are not located in a country that is subject to a U.S. Government embargo, or that has been designated by the U.S. Government as a &ldquo;terrorist supporting&rdquo; country, and (b) you are not listed on any U.S. Government list of prohibited or restricted parties.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Developer Name and Address</span></u><span style="font-family:'Sofia Pro';">. Any questions, complaints or claims with respect to the iOS App should be directed to:</span></li>
+    </ul>
+    <p style="margin-top:0pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">SoundMind</span></p>
+    <p style="margin-top:0pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">2618 San Miguel Drive</span></p>
+    <p style="margin-top:0pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">Newport Beach, CA 92260</span></p>
+    <p style="margin-top:0pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">support@soundmind.app</span></p>
+    <ul style="margin:0pt; padding-left:0pt;" type="disc">
+        <li style="margin-top:12pt; margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Third-Party Terms of Agreement</span></u><span style="font-family:'Sofia Pro';">. You agree to comply with any applicable third-party terms when using the Services.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><u><span style="font-family:'Sofia Pro';">Third-Party Beneficiary</span></u><span style="font-family:'Sofia Pro';">. The parties acknowledge and agree that Apple, and Apple&rsquo;s subsidiaries, are third-party beneficiaries of these Terms, and that, upon your acceptance of these Terms, Apple will have the right (and will be deemed to have accepted the right) to enforce these Terms against you as a third-party beneficiary thereof).</span></li>
+    </ul>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">The following terms apply if you install, access, or use the Services on any device that contains the Android mobile operating system (the &ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">Android App</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;) developed by Google, Inc. (&ldquo;</span><strong><em><span style="font-family:'Sofia Pro';">Google</span></em></strong><span style="font-family:'Sofia Pro';">&rdquo;):</span></p>
+    <ul style="margin:0pt; padding-left:0pt;" type="disc">
+        <li style="margin-top:12pt; margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">You acknowledge that these Terms are between You and us only, and not with Google.&nbsp;</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Your use of our Android App must comply with Google&rsquo;s then-current Android Market Terms of Service.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">Google is only a provider of the Android Market where You obtained the Android App.</span><span style="font-family:'Sofia Pro';">&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">We, and not Google, are solely responsible for our Android App and the Services and Content available thereon. Google has no obligation or liability to You with respect to Our Android App or these Terms.</span></li>
+        <li style="margin-left:27.6pt; padding-left:8.4pt; font-family:serif; font-size:10pt;"><span style="font-family:'Sofia Pro';">You acknowledge and agree that Google is a third-party beneficiary to the Terms as they relate to our Android App.</span></li>
+    </ul>
+    <h1 style="margin-top:12pt; margin-bottom:0pt; page-break-inside:avoid; page-break-after:avoid; font-size:10pt;"><span style="font-family:'Sofia Pro';">19.</span><span style="width:28.09pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-family:'Sofia Pro';">Miscellaneous</span></h1>
+    <p style="margin-top:12pt; margin-bottom:0pt; font-size:10pt;"><span style="font-family:'Sofia Pro';">These Terms constitute the entire agreement between you and&nbsp;</span><a name="_Hlk84420397"><span style="font-family:'Sofia Pro';">SoundMind</span></a><span style="font-family:'Sofia Pro';">&nbsp;relating to your access to and use of our Services. Notwithstanding any other provisions of these Terms, Sections</span><span style="font-family:'Sofia Pro';">&nbsp;</span><span style="font-family:'Sofia Pro';">3, 4, 5, 7, 8, 9, 11, 12, 14, 15, 16, 17, 18, and 19 survive any expiration or termination of these terms. The failure of SoundMind to exercise or enforce any right or provision of these Terms will not operate as a waiver of such right or provision. The section titles in these Terms are for convenience only and have no legal or contractual effect. Except as otherwise provided herein, these Terms are intended solely for the benefit of the parties and are not intended to confer third-party beneficiary rights upon any other person or entity. You agree that communications and transactions between us may be conducted electronically. These Terms may not be transferred, assigned or delegated by you, by operation of law or otherwise, without our prior written consent, and any attempted transfer, assignment or delegation without such consent will be void and without effect. We may freely transfer, assign or delegate these Terms or the Services, in whole or in part, without your prior written consent. Under California Civil Code Section 1789.3, California consumers are entitled to the following specific consumer rights notice: The Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs may be contacted in writing at 1625 N. Market Blvd., Suite N-112, Sacramento, California 95834, or by telephone at 1 (800) 952-5210.</span><a name="h.z337ya"></a><span style="font-family:'Sofia Pro';">&nbsp;</span></p>
+    <div style="clear:both;">
+        <p style="margin-top:12pt; margin-bottom:0pt; text-align:center; font-size:10pt;"><span style="font-family:'Times New Roman';">-&nbsp;</span>1<span style="font-family:'Times New Roman';">&nbsp;-</span></p>
+        <p style="margin-top:12pt; margin-bottom:0pt; text-align:left; line-height:10pt;">&nbsp;</p>
+        <p style="margin-top:12pt; margin-bottom:0pt; text-align:left; line-height:10pt;">&nbsp;</p>
+        <p style="margin-top:12pt; margin-bottom:0pt; text-align:left; line-height:10pt;">&nbsp;</p>
+    </div>
+</div>
+</html>
